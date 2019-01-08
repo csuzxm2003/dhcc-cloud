@@ -1,0 +1,8 @@
+com\itmuch\cloud\study\ServletInitializer.class
+com\itmuch\cloud\study\user\entity\User.class
+com\itmuch\cloud\study\user\controller\MovieController.class
+com\itmuch\cloud\study\user\feign\FeignClientFallbackFactory.class
+com\itmuch\cloud\study\ConsumerMovieApplication.class
+com\itmuch\cloud\study\user\feign\FeignClientFallbackFactory$1.class
+com\itmuch\cloud\study\user\feign\GatewayFeignClient.class
+com\itmuch\cloud\study\user\feign\UserFeignClient.class

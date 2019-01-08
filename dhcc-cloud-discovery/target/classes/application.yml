@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: eureka-server
+  security:
+    user:
+      name: user                  # 配置登录的账号是user
+      password: 123456       # 配置登录的密码是password123
+server:
+  port: 8080              # 指定该Eureka实例的端口
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://user:123456@localhost:8080/eureka/
+  server:
+    renewalPercentThreshold: 0.49
+# 参考文档：http://projects.spring.io/spring-cloud/docs/1.0.3/spring-cloud.html#_standalone_mode
+# 参考文档：http://my.oschina.net/buwei/blog/618756

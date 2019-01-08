@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>com.dhcc</groupId>
+  <artifactId>dhcc-cloud</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+  
+  <name>dhcc-cloud</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	<java.version>1.8</java.version>
+  </properties>
+
+  <modules>
+    <module>dhcc-cloud-client-1</module>
+	<module>dhcc-cloud-client-2</module>
+    <module>dhcc-cloud-config</module>
+    <module>dhcc-cloud-discovery</module>
+    <module>dhcc-cloud-gateway-1</module>
+	<module>dhcc-cloud-gateway-2</module>
+    <module>dhcc-cloud-provider-A1</module>
+	<module>dhcc-cloud-provider-A2</module>
+	<module>dhcc-cloud-provider-B1</module>
+	<module>dhcc-cloud-provider-B2</module>
+	<module>dhcc-cloud-zipkin</module>
+	<module>dhcc-cloud-turbine</module>
+  </modules>
+  
+  <parent>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-parent</artifactId>
+	<version>2.0.6.RELEASE</version>
+	<relativePath/> <!-- lookup parent from repository -->
+  </parent>
+  
+  <dependencies>
+  </dependencies>
+</project>

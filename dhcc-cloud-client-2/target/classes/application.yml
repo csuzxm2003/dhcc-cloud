@@ -1,0 +1,51 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: service-client
+  jmx:
+    enabled: false
+  zipkin:
+    base-url: http://localhost:8081
+  sleuth:
+    sampler:
+      probability: 1
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:123456@localhost:8080/eureka/
+  instance:
+    hostname: peer2
+    prefer-ip-address: false
+logging:
+  level:
+    feign: DEBUG
+
+#hystrix的超时时间 
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 9000 
+#ribbon的超时时间
+ribbon:
+  ReadTimeout: 3000
+  ConnectTimeout: 3000
+
+feign:
+  hystrix:
+    enabled: true
+    
+#新版配置，否则后面dashboard无法找到hystrix.stream
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+# 说明：请务必注意，从Spring Cloud Dalston开始，Feign默认是不开启Hystrix的。
+# 因此，如使用Dalston请务必额外设置属性：feign.hystrix.enabled=true，否则断路器不会生效。
+# 而，Spring Cloud Angel/Brixton/Camden中，Feign默认都是开启Hystrix的。无需设置该属性。
