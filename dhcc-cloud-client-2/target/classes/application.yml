@@ -9,6 +9,15 @@ spring:
   sleuth:
     sampler:
       probability: 1
+  cloud:
+    bus:
+      trace:
+        enabled: true     # 开启cloud bus的跟踪
+  rabbitmq:
+    host: 134.175.134.80
+    port: 5672
+    username: root
+    password: dhcc2018 
 
 logging:
   level:

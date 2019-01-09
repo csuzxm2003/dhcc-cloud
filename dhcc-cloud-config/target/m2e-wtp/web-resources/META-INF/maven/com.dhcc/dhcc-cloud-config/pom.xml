@@ -45,7 +45,7 @@
     	<artifactId>org.eclipse.jgit</artifactId>
     	<version>4.8.0.201706111038-r</version><!--$NO-MVN-MAN-VER$-->
 	</dependency>
-
+	<!-- 消息总线 -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-bus-amqp</artifactId>
