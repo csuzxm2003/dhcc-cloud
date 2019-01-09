@@ -16,3 +16,4 @@ zuul:
     service-provider-A: providerA/**
     service-provider-B: providerB/**
     service-client: client/**
+    service-config: config/**

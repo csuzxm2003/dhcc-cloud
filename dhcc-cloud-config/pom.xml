@@ -20,14 +20,32 @@
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <!-- 健康检查包 -->
   	<dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
+    <!-- 配置中心服务包 -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-config-server</artifactId>
     </dependency>
+    <!-- 注册中信客户端模块 -->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+    </dependency>
+    <!-- 解决启动失败问题引入的包 -->
+    <dependency>
+    	<groupId>org.eclipse.jgit</groupId>
+    	<artifactId>org.eclipse.jgit</artifactId>
+    	<version>4.8.0.201706111038-r</version><!--$NO-MVN-MAN-VER$-->
+	</dependency>
+
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-bus-amqp</artifactId>
