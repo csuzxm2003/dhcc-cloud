@@ -30,6 +30,7 @@
 	<module>dhcc-cloud-provider-B2</module>
 	<module>dhcc-cloud-zipkin</module>
 	<module>dhcc-cloud-turbine</module>
+	<module>dhcc-cloud-admin</module>
   </modules>
   
   <parent>

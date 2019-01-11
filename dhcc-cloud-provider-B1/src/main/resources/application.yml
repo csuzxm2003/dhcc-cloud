@@ -10,6 +10,10 @@ spring:
   sleuth:
     sampler:
       probability: 1
+  boot:
+    admin:
+      client:
+        url: http://localhost:8091  #申明SBA的地址 
 #  jpa:
 #    generate-ddl: false
 #    show-sql: true

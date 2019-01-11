@@ -2,8 +2,8 @@
 spring:
 #  application:
 #    name: service-client
-  jmx:
-    enabled: false
+#  jmx:
+#    enabled: false
   zipkin:
     base-url: http://localhost:8081
   sleuth:
@@ -17,9 +17,7 @@ spring:
     host: 134.175.134.80
     port: 5672
     username: root
-    password: dhcc2018  
-      
-      
+    password: dhcc2018
       
 logging:
   level:
@@ -50,6 +48,7 @@ management:
     web:
       exposure:
         include: '*'
+    
 # 说明：请务必注意，从Spring Cloud Dalston开始，Feign默认是不开启Hystrix的。
 # 因此，如使用Dalston请务必额外设置属性：feign.hystrix.enabled=true，否则断路器不会生效。
 # 而，Spring Cloud Angel/Brixton/Camden中，Feign默认都是开启Hystrix的。无需设置该属性。
